@@ -50,8 +50,6 @@ class Bank{
 		return this.accountNumber+" "+this.bankName;
 	}
 
-
-
 	public void createBankAccount() {
 		Scanner myObj = new Scanner(System.in);
 
@@ -77,7 +75,6 @@ class Bank{
 		System.out.println("Enter bank id");
         int bankId = myObj.nextInt();
         
-
 		this.createBank(accountNumber, amount, shared, sharedUsedId, bankName, bankId);
 	}
 
