@@ -15,7 +15,7 @@ class User{
 	User(){
 	}
 
-	void createUser(String firstName, String lastName, int age, String ssn, int id, String email){
+	User(String firstName, String lastName, int age, String ssn, int id, String email){
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.age = age;
@@ -24,8 +24,8 @@ class User{
 		this.email = email;
 
 		
-		User user= new User();
-		ArrayList<User> users.add(user)
+		
+		users.add(this);
 	}
 
 	public int getid(){
@@ -52,32 +52,6 @@ class User{
 		return this.firstName+" "+this.lastName;
 	}
 
-
-	public void create() {
-		Scanner myObj = new Scanner(System.in);
-
-		System.out.println("Enter firstName");
-		String firstName = myObj.nextLine();
-		
-		System.out.println("Enter lastName");
-		String lastName = myObj.nextLine();
-		
-		System.out.println("Enter age");
-		int age = myObj.nextInt();
-		myObj.nextLine();
-		
-		System.out.println("Enter ssn");
-		String ssn = myObj.nextLine();
-		
-		System.out.println("Enter id");
-		int id = myObj.nextInt();
-		myObj.nextLine();
-		
-		System.out.println("Enter Email");
-		String email = myObj.nextLine();
-
-		this.createUser(firstName, lastName, age, ssn, id, email);
-	}
 
 	public String update(){
 		
