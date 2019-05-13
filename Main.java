@@ -12,6 +12,8 @@ class Main extends User{
 
 		create();
 		System.out.println("SHOW USERS");
+		ArrayList<User> users = new ArrayList<User>();
+		User(String firstName, String lastName, int age, String ssn, int id, String email);
 		ArrayList<User> users = user.getUsers();
 		users.forEach(u->System.out.println(u.toString()));
 

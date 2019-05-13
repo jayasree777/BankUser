@@ -6,14 +6,14 @@ class User{
 	String lastName;
 	int age;
 
-	private String ssn;
-	private int id;
-	private String email;
+	String ssn;
+    int id;
+	String email;
 
-	ArrayList<User> users = new ArrayList<User>();
+	 ArrayList<User> users = new ArrayList<User>();
 
-	User(){
-	}
+	 //User(){
+	 //}
 
 	User(String firstName, String lastName, int age, String ssn, int id, String email){
 		this.firstName = firstName;
@@ -28,29 +28,21 @@ class User{
 		users.add(this);
 	}
 
-	public int getid(){
-		return this.id;
+	/*public String getssn(){
+		return this.ssn;
 	}
 
-	public void setid(int id){
-		this.id = id;
-	}
-
-	public String getemailId(){
-		return this.email;
-	}
-
-	public void setemailId(String email){
-		this.email = email;
-	}
-
-	public ArrayList<User> getUsers(){
-		return this.users;
-	}
+	public void setid(String ssn){
+		this.ssn = ssn;
+	}*/
 
 	public String toString(){
 		return this.firstName+" "+this.lastName;
 	}
+
+	
+
+	
 
 
 	public String update(){
